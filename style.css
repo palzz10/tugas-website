@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+    background-color: #008080;
+    padding: 15px;
+    color: white;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 24px;
+}
+header nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('backgron.jpg'); /* Anda bisa mengganti gambar sesuai kebutuhan */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 100px 20px;
+}
+
+p{
+    text-align: justify;
+}
+.banner h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Content Section */
+.content {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+.content .container {
+    max-width: 900px;
+    margin: auto;
+}
+.content article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.content h3 {
+    color: #008080;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer p {
+    margin: 5px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner h2 {
+        font-size: 24px;
+    }
+    header nav a {
+        font-size: 14px;
+    }
+    .content h3 {
+        font-size: 18px;
+    }
+}
